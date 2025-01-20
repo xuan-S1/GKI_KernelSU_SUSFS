@@ -134,9 +134,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: ./downloaded-artifacts
-curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -s next
-
-      # Create GitHub Release and upload files if make_release is true
+          
+    # Create GitHub Release and upload files if make_release is true
       - name: Create GitHub Release
         uses: actions/create-release@v1
         with:
